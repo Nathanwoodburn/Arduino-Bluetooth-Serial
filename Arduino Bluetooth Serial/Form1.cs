@@ -275,6 +275,9 @@ serialPort.PortName = textBox1.Text; // Set in Windows
             textBox1.Text = comboBox1.Text;
         }
 
-
+        private void richTextBox1_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.LinkText);
+        }
     }
 }
