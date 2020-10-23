@@ -249,6 +249,21 @@ serialPort.PortName = textBox1.Text; // Set in Windows
             textBox2.Text = "9";
             button2.PerformClick();
         }
+        private void button18_Click_2(object sender, EventArgs e)
+        {
+            textBox2.Text = "5";
+            button2.PerformClick();
+        }
+        private void button20_Click_2(object sender, EventArgs e)
+        {
+            textBox2.Text = "I";
+            button2.PerformClick();
+        }
+        private void button21_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = "0";
+            button2.PerformClick();
+        }
         #endregion
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -279,5 +294,7 @@ serialPort.PortName = textBox1.Text; // Set in Windows
         {
             System.Diagnostics.Process.Start(e.LinkText);
         }
+
+        
     }
 }

@@ -63,6 +63,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -306,7 +309,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(127, 48);
+            this.button16.Location = new System.Drawing.Point(127, 77);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 3;
@@ -316,7 +319,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(30, 48);
+            this.button15.Location = new System.Drawing.Point(30, 77);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 2;
@@ -326,11 +329,11 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(78, 19);
+            this.button13.Location = new System.Drawing.Point(58, 19);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.Size = new System.Drawing.Size(121, 23);
             this.button13.TabIndex = 0;
-            this.button13.Text = "Forward";
+            this.button13.Text = "Forward (autocorrect)";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -346,6 +349,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button21);
+            this.groupBox1.Controls.Add(this.button20);
+            this.groupBox1.Controls.Add(this.button18);
             this.groupBox1.Controls.Add(this.button17);
             this.groupBox1.Controls.Add(this.button13);
             this.groupBox1.Controls.Add(this.button19);
@@ -372,7 +378,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(78, 77);
+            this.button14.Location = new System.Drawing.Point(78, 106);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 4;
@@ -416,6 +422,36 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Transmit";
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(78, 48);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 17;
+            this.button18.Text = "Forward";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click_2);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(300, 106);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(50, 23);
+            this.button20.TabIndex = 18;
+            this.button20.Text = "Info";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click_2);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(78, 135);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 19;
+            this.button21.Text = "Reverse";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // Form1
             // 
@@ -478,6 +514,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
     }
 }
 
