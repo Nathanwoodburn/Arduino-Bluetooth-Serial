@@ -39,7 +39,10 @@ serialPort.PortName = textBox1.Text; // Set in Windows
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            splash splash1 = new splash();
+            splash1.ShowDialog();
+            splash1.Dispose();
+            this.BringToFront();
             serialPort.BaudRate = 9600;
             comboBox1.Items.AddRange(SerialPort.GetPortNames());
         }
