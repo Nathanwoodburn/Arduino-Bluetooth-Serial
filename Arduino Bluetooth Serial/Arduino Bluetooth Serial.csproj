@@ -28,7 +28,7 @@
     <ProductName>Arduino Bluetooth Serial</ProductName>
     <PublisherName>NJW Apps</PublisherName>
     <SuiteName>Arduino Bluetooth</SuiteName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.2.3.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
