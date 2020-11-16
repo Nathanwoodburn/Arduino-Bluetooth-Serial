@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Windows.Forms;
 using System.Threading;
+using DarkUI.Forms;
 
 namespace Arduino_Bluetooth_Serial
 {
-    public partial class Form1 : Form
+    public partial class Form1 : DarkForm
     {
         public Form1()
         {
@@ -26,7 +27,7 @@ namespace Arduino_Bluetooth_Serial
             try
             {
 serialPort.PortName = textBox1.Text; // Set in Windows
-            serialPort.Open();
+                serialPort.Open();
                 label1.Text = "Connected";
             }
             catch (Exception)
@@ -98,7 +99,7 @@ serialPort.PortName = textBox1.Text; // Set in Windows
                 {
                     if (serialPort.BytesToRead > 0)
                     {
-                        richTextBox1.Text = richTextBox1.Text + "\n" + Convert.ToChar(serialPort.ReadByte());
+                        richTextBox1.Text = richTextBox1.Text + Convert.ToChar(serialPort.ReadByte());
                         Thread.Sleep(10);
                         while (serialPort.BytesToRead > 0)
                         {
@@ -297,7 +298,5 @@ serialPort.PortName = textBox1.Text; // Set in Windows
         {
             System.Diagnostics.Process.Start(e.LinkText);
         }
-
-        
     }
 }
